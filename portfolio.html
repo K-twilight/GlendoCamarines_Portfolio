@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Glendo Camarines - Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container about-container">
+            <div class="about-text">
+                <h1>Hello, I'm Glendo S. Camarines Jr.</h1>
+                <p>A third-year BSIT student with a passion for developing innovative software solutions. I have experience working on diverse projects, from game development to full-stack web applications, with a strong focus on creating user-friendly and functional systems. Currently, I’m expanding my skills in web development, focusing on both frontend and backend technologies, while working on real-world projects such as a vaccine monitoring system for infants.</p>
+            </div>
+            <div class="profile-container">
+                <img src="https://scontent.fmnl9-3.fna.fbcdn.net/v/t39.30808-6/289942340_1706998622989168_6183030728192291835_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFu_qWTtlpnFmBX8DSwRl53vAyhj4tcUU-8DKGPi1xRT9DVuSVcAgJQH6Z8ZnVNRDFy3RK6KhKK4icm5g_8nWd7&_nc_ohc=PvJKztMy4sMQ7kNvgEmyZVb&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&_nc_gid=A2P3UOXcHys07y2tTmgsgXP&oh=00_AYCo6khhLZxL2SCBZBYRuCT4YXfeW4r21_470WurK8NyYA&oe=67156052" alt="Jean Leslie Velasco" class="profile-pic">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Mazetery (Maze Game)</h3>
+                    <p> Mazetery is a C++ maze game developed in collaboration with a partner. The game challenges players to navigate through a complex maze to reach the end goal, demonstrating key principles of game design, including user input handling and dynamic rendering.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Event Management System</h3>
+                    <p>This event management system was developed using VB.NET in Visual Studio as part of a group project with three members. The system allows users to efficiently schedule, organize, and track event details, offering a user-friendly interface for managing event logistics. The project highlights proficiency in application development, database integration, and collaborative software design.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Pokédex Project</h3>
+                    <p>Currently under development, the Pokédex project is a full-stack web application designed for Pokémon trainers. Users will be able to create profiles, explore a detailed Pokémon library from Generation I, add Pokémon to their collections, view other trainers' profiles, and engage in trades. This project demonstrates proficiency in frontend and backend technologies, including dynamic content handling and database management.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Vaccine Monitoring and Reporting System for Infants</h3>
+                    <p>Currently in development as a group project with three members, this system focuses on monitoring and reporting vaccines administered to infants. It aims to provide accurate record-keeping and timely reports for healthcare professionals and parents, enhancing vaccination tracking and infant health management. This project utilizes the Laravel framework to ensure a robust and scalable system.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">C & C++</div>
+                <div class="skill-card">HTML, CSS & JS</div>
+                <div class="skill-card">PHP & MySQL</div>
+                <div class="skill-card">VB.NET</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you’d like to collaborate or just say hello, feel free to reach out via email or connect on Facebook.</p>
+            <p>Email: glendosalazar21@gmail.com</p>
+            <p>Github: <a href="https://github.com/K-twilight" target="_blank">K-twilight</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Glendo S. Camarines Jr. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
